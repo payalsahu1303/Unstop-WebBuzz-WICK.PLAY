@@ -1,0 +1,133 @@
+/* Base Navbar Styles */
+.wick-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(44, 62, 80, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(1px); /* Blur effect */
+  z-index: 1000;
+  box-shadow: none; /* Remove any shadow */
+  height: 80px;
+}
+
+.wick-logo {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.wick-navlist ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.wick-navlist ul li {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.wick-navlist ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.wick-navlist ul li .wick-icon {
+  font-size: 22px;
+}
+
+.wick-navlist ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.wick-navlist ul li a.active {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+
+/* Media Queries for Mobile View */
+@media screen and (max-width: 768px) {
+  .wick-navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .wick-hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    margin-bottom: 15px; /* Add margin below the hamburger icon */
+    margin-top: -25px;
+  }
+
+  .wick-navlist {
+    display: none;
+    width: 100%; /* Full width */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(44, 62, 80, 0.8); /* Darker background */
+    padding: 15px 0;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  .wick-navlist.wick-open {
+    display: block;
+  }
+
+  .wick-navlist ul {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wick-navlist ul li {
+    display: block;
+    padding: 10px 15px;
+  }
+}
+
+/* Desktop View */
+@media screen and (min-width: 769px) {
+  .wick-hamburger {
+    display: none;
+  }
+
+  .wick-navlist {
+    display: flex; /* Ensure the nav list is displayed in desktop view */
+    position: static; /* Reset position */
+    background-color: transparent; /* Transparent background */
+    padding: 0; /* Reset padding */
+    width: auto; /* Reset width */
+    text-align: center; /* Center text */
+  }
+
+  .wick-navlist ul {
+    flex-direction: row; /* Align items horizontally */
+  }
+
+  .wick-navlist ul li {
+    display: inline-block; /* Ensure items are inline */
+  }
+}

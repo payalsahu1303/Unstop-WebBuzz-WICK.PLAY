@@ -1,0 +1,110 @@
+/* Sponsors Section Styles */
+.sponsors-section {
+  background: linear-gradient(
+        rgba(0, 0, 0, 0.5), /* Gradient color and opacity */
+        rgba(0, 0, 0, 0.5) /* Gradient color and opacity */
+    ), url('../assets/img3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  color: #5b97ea; /* Tailwind's text-gray-800 */
+    padding-bottom: 32px;
+  }
+  
+  /* Header Section Styles */
+  .header-section {
+    text-align: center;
+    padding: 64px 0; /* Tailwind's py-16 */
+    color: white;
+  }
+  
+  .header-section h1 {
+    font-size: 2.25rem; /* Tailwind's text-4xl */
+    font-weight: 700; /* Tailwind's font-bold */
+    color: #ffffff; /* Tailwind's text-white */
+  }
+  
+  .header-section p {
+    font-size: 1.125rem; /* Tailwind's text-lg */
+    color: #807f7a; /* Tailwind's text-yellow-200 */
+    margin-top: 16px; /* Tailwind's mt-4 */
+  }
+  
+  /* Container Styles */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 32px; /* Tailwind's px-8 */
+    padding-right: 32px; /* Tailwind's px-8 */
+  }
+  
+  /* Grid Styles */
+  .sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px; /* Tailwind's gap-6 */
+  }
+  
+  @media (min-width: 768px) {
+    .sponsors-grid {
+      grid-template-columns: repeat(3, 1fr); /* Tailwind's md:grid-cols-3 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .sponsors-grid {
+      grid-template-columns: repeat(4, 1fr); /* Tailwind's lg:grid-cols-4 */
+    }
+  }
+  
+  /* Sponsor Card Styles */
+  .sponsor-card {
+    background-color: #e2e2e2d7; /* Tailwind's bg-white */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
+    padding: 24px; /* Tailwind's p-6 */
+    border-radius: 12px; /* Tailwind's rounded-lg */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+   }
+  
+  .sponsor-card img {
+   height: 180px;
+   margin-bottom:10px;
+   border-radius: 10px;
+  }
+  
+  .sponsor-card h3 {
+    font-size: 1.125rem; /* Tailwind's text-lg */
+    font-weight: 600; /* Tailwind's font-semibold */
+    margin-bottom: 8px;
+  }
+  
+  .sponsor-card p {
+    font-size: 0.875rem; /* Tailwind's text-sm */
+    color: #4b5563; /* Tailwind's text-gray-600 */
+  }
+  
+  /* Button Styles */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px; /* Tailwind's mt-8 */
+    padding: 32px; /* Tailwind's p-8 */
+  }
+  
+  .btn {
+    background-color: #2563eb; /* Tailwind's bg-blue-600 */
+    color: #ffffff; /* Tailwind's text-white */
+    font-weight: 700; /* Tailwind's font-bold */
+    padding: 8px 24px; /* Tailwind's py-2 px-6 */
+    border-radius: 12px; /* Tailwind's rounded-lg */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Tailwind's transition duration-300 */
+  }
+  
+  .btn:hover {
+    background-color: #1e40af; /* Tailwind's hover:bg-blue-700 */
+  }
+  

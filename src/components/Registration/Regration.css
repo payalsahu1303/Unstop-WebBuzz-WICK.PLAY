@@ -1,0 +1,422 @@
+/* General Styling */
+ 
+
+.Registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+  background-color: #0a8547;
+}
+
+/* Header Section */
+.header {
+  width: 95%;
+  padding: 10px;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+  font-weight: bold;
+  color: rgb(6, 6, 6);
+}
+
+.registration-title {
+   margin-right: 43%;
+  color: rgb(0, 0, 0);
+  font-size: 23px;
+  text-align: center;
+}
+.header h1{
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+/* Form Section */
+.form-container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 1px;
+}
+
+/* Form Grid for Desktop */
+.registration-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #dedcdc;
+  font-size: 16px;
+}
+
+.gender-options {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.button-wrapper {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-btn {
+  width: 100px;
+  padding: 10px 0;
+  background-color: #0a8547;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background-color: #08673a;
+}
+
+/* Team Details Form */
+.team-details-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.optional {
+  color: red;
+}
+
+.button-group {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-btn, .submit-btn {
+  width: 100px;
+  padding: 10px 0;
+  background-color: #0a8547;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.prev-btn:hover, .submit-btn:hover {
+  background-color: #08673a;
+}
+
+/* Tournament Details Form */
+.tournament-details-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column layout */
+  gap: 20px; /* Spacing between form elements */
+}
+
+select, input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #dedcdc;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical; /* Allow resizing of the textarea vertically */
+  min-height: 100px; /* Set a minimum height */
+}
+
+.date-range {
+  display: flex;
+  gap: 10px; /* Space between the date inputs */
+}
+
+input[type="date"] {
+  flex: 1; /* Make date inputs stretch evenly */
+}
+
+/* Optional field styling */
+.optional {
+  color: red;
+}
+
+#form-group{
+  margin-bottom: 10px;
+}
+
+/* Button group styling */
+.button-group {
+  grid-column: span 2; /* Make buttons span across the two columns */
+  display: flex;
+  justify-content: space-between;
+}
+.confirmation-message {
+  padding: 0;
+  text-align: center;
+}
+
+.confirmation-message h2 {
+  font-size: 18px;
+}
+
+/* Adjust SVG for mobile */
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 250px; /* Smaller size for mobile */
+  margin: 0 auto;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  max-width: 250px; /* SVG takes up full width */
+}
+
+.circle {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: draw-circle 1s ease-out forwards;
+}
+
+.tick {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: draw-tick 0.6s ease-out 1s forwards;
+}
+
+@keyframes draw-circle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-tick {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Responsive Design */
+
+/* For tablets and mobile devices */
+@media (max-width: 768px) {
+ 
+  .registration-title {
+    font-size: 20px;
+     text-align: center;
+    }
+
+  .header {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    margin-left: 0;
+    font-size: 22px;
+  }
+
+  .form-container {
+    width: 90%; 
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .registration-form,
+  .team-details-form {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .button-wrapper,
+  .button-group {
+    justify-content: center;
+    grid-column: span 1;
+  }
+
+  .submit-btn,
+  .prev-btn {
+    width: 100%;
+  }
+  
+  .tournament-details-form {
+    grid-template-columns: 1fr; /* Switch to a single-column layout */
+    gap: 15px;
+  }
+
+  .button-group {
+    grid-column: span 1; /* Ensure buttons stack if needed */
+    justify-content: center;
+  }
+
+  .prev-btn, .submit-btn {
+    width: 100%; /* Make buttons full width */
+  }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 480px) {
+  body {
+    margin: 1px;
+    padding: 0;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .registration-title {
+    font-size: 17px;
+    margin-top: 25px;
+     margin-left: 100%; /* Center alignment adjustment */
+    transform: translateX(-50%); /* Keep the title centered */
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  .form-title {
+    font-size: 16px;
+    text-align: center; /* Center the title */
+  }
+
+  input,
+  select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* Adjust button-group layout for smaller screens */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .tournament-details-form {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 15px;
+    width: 100%; /* Ensure form takes full width */
+  }
+
+  select,
+  input,
+  textarea {
+    width: 100%; /* Inputs take full width */
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensure padding is included in element's width */
+  }
+
+  .date-range {
+    justify-content: space-between;
+    gap: 15px;
+    display: flex;
+    flex-direction: column; /* Stack dates vertically */
+  }
+
+  .date-range input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  textarea {
+    min-height: 80px;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* Adjust button sizes and layout */
+  .submit-btn,
+  .prev-btn {
+    width: 100px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 10px;
+  }
+
+  /* Confirmation message adjustments */
+  .confirmation-message {
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .confirmation-message h2 {
+    font-size: 18px;
+  }
+
+  /* Adjust SVG for mobile */
+  .svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 250px; /* Smaller size for mobile */
+    margin: 0 auto;
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* SVG takes up full width */
+  }
+}

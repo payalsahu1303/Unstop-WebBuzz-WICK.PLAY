@@ -1,0 +1,159 @@
+.showContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* White background */
+    height: 230vh; /* Full height */
+    padding: 20px; /* Space around content */
+    font-family: 'Arial', sans-serif; /* Font style */
+    justify-content: center;
+}
+.vs{
+    color: red;
+}
+.showMatch {
+    width: 100%;
+    max-width: 900px; /* Max width for content */
+    margin-bottom: 30px; /* Space below match section */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Rounded corners effect */
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Subtle gradient */
+}
+
+.showbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #dee2e6; /* Divider line */
+}
+
+.imgLogo img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.temanames {
+    margin: 15px 0; /* Space around team names */
+    text-align: center; /* Center align */
+}
+
+.score {
+    display: flex;
+    justify-content: space-between; /* Space score elements */
+    width: 100%;
+    margin: 10px 0;
+}
+
+.score h4 {
+    font-size: 1.5em; /* Larger font for score */
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.players {
+    width: 100%;
+    max-width: 1200px; /* Match the max width */
+    background: #f8f9fa; /* Light background for players section */
+    border-radius: 10px; /* Rounded corners */
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.playerScoreboard {
+    display: flex;
+    flex-direction: row; /* Stack teams vertically on smaller screens */
+    justify-content: space-between; /* Space teams evenly */
+    margin-top: 15px; /* Space above scoreboard */
+    gap: 10px;
+
+}
+
+.team {
+    flex: 1; /* Each team takes equal space */
+    text-align: center; /* Center align */
+    padding: 10px; /* Inner padding */
+    border-radius: 8px; /* Rounded corners */
+    background: #ffffff; /* White background for teams */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for teams */
+    margin-bottom: 15px; /* Space between teams */
+    display: flex;
+    flex-direction:column;
+    max-width: 600px;
+}
+
+.team h4 {
+    margin-bottom: 10px;
+    font-weight: bold; /* Bold team name */
+    color: #208fff; /* Dark color for contrast */
+}
+
+.team ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.team li {
+    margin: 5px 0; /* Vertical space between players */
+    font-size: 1.1em; /* Slightly larger font size */
+    color: #495057; /* Slightly lighter dark text */
+    transition: color 0.3s; /* Smooth color transition */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.team li:hover {
+    color: #007bff; /* Change color on hover */
+    cursor: pointer; /* Pointer cursor */
+}
+ 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .showContainer {
+        height: 370vh;
+    }
+    .playerScoreboard {
+        flex-direction: column; /* Stack teams vertically */
+    }
+
+    .team {
+        margin-bottom: 20px; /* Add more space between teams */
+    }
+
+    .score h4 {
+        font-size: 1.2em; /* Adjust score font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .score h4 {
+        font-size: 1em; /* Smaller score font size */
+    }
+
+    .team li {
+        font-size: 1em; /* Adjust player name font size */
+    }
+}
+
+.players {
+    margin-top: 20px;
+}
+
+.team ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.team li {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Ensures name and score are on opposite sides */
+}
+
+.playerScore {
+    font-weight: bold;
+    color: #333; /* Change color as needed */
+}
+

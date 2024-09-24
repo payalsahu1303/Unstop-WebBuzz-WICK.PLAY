@@ -1,0 +1,19 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ 
+ body {
+     color: #000000;
+    font-family: "Arial", sans-serif;
+    background-color: rgba(39, 36, 36, 0.651);
+    background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.207)),
+    url("https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1905&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") 
+      no-repeat bottom center/cover;
+  background-size: cover;
+  background-position: center;
+   
+  }

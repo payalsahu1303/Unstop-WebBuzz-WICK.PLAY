@@ -1,0 +1,217 @@
+/* General Styling */
+ .Tournament{
+    height: 110vh;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a8547;
+ }
+  .tournament-form-container {
+    background-color: #fff;
+     max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .tournament-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: hwb(0 100% 0%);
+  }
+  
+  input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f9f9f900;
+    background-color: transparent;
+  }
+  
+  button {
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .submit-btn {
+    background-color: #0a8547;
+    color: white;
+    border: none;
+  }
+  
+  .submit-btn:hover {
+    background-color: #08673a;
+  }
+  
+  .prev-btn {
+    background-color: #0a8547;
+    color: white;
+    border: none;
+  }
+  
+  .prev-btn:hover {
+    background-color: #08673a;
+  }
+  
+  /* Confirmation Page Styling */
+  .confirmation-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .confirmation-page h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .confirmation-page p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-page button {
+    background-color: #0a8547;
+    color: white;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .confirmation-page button:hover {
+    background-color: #08673a;
+  }
+  
+  /* Payment Section Styling */
+  .payment-summary {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .button-wrapper {
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-end;
+     margin: 0;
+   }
+  .button-group {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  /* Responsive Styling */
+  @media (max-width: 480px) {
+.Tournament{
+    margin-top: 100px;
+}
+    .tournament-form-container {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       max-width: 400px; 
+      box-sizing: border-box;
+      background-color: #fff; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: black;
+    }
+  
+    .form-title {
+      font-size: 22px;
+      text-align: center;
+      margin-top: 100px;
+      color: black;
+    }
+  .tournament-form label{
+    color: black;
+  }
+    .tournament-form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px; 
+    }
+  
+    input, select {
+      font-size: 14px;
+      padding: 10px;
+      padding-right: 10px;
+      color: black;
+  
+    }
+  
+    .submit-btn, .prev-btn {
+      padding: 12px;
+      font-size: 15px;
+      width: auto; 
+      max-width: 100%; 
+      justify-content: space-between;  
+      gap: 20px;
+  
+    }
+  
+    .prev-btn {
+      background-color: #0a8547;
+      border: 1px solid #ccc;
+    }
+  
+    .submit-btn {
+      background-color: #0a8547;
+      color: #fff;
+      border: none;
+    }
+    .button-wrapper {
+      grid-column: span 2;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .button-group {
+      grid-column: span 2;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+  
+  
+    .confirmation-page {
+  
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .confirmation-page button {
+      padding: 12px;
+      font-size: 15px;
+      margin: 5px;
+      cursor: pointer;
+      width: calc(50% - 10px); 
+    }
+  }
+  

@@ -1,0 +1,368 @@
+.pmainbox{
+    height: 110vh;
+    display: flex;
+    align-items: center;
+}
+.pcontainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+
+.pcontainer .pleft {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pcontainer .pleft .ptopleft {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pleft .ptopleft .livematch {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ptopleft .livematch img {
+    border-radius: 20%;
+    height: 270px;
+}
+
+.pcontainer .pleft .pbottomleft {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pbottomleft .matchhistory {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.pcontainer .pright {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    gap: 20px;
+}
+
+.pcontainer .pright .rightprofile {
+    height: 95%;
+    width: 95%;
+     border-radius: 10px;
+}
+
+.pright .rightprofile .ptopright {
+    padding: 10px; /* Add padding for inner content */
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    border: 1px solid #e3e6ea; /* Light border for structure */
+    overflow: hidden; /* Prevent content overflow */
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Well-sized square container */
+    margin: 0 auto; /* Center within container */
+}
+
+.ptopright h2 {
+    font-size: 26px; /* Larger font size */
+    margin-bottom: 20px; /* Space below heading */
+    color: #343a40; /* Darker text */
+    text-align: center; /* Centered heading */
+    font-weight: bold;
+}
+
+.ptopright p {
+    font-size: 18px; /* Comfortable font size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 15px; /* Space between paragraphs */
+    color: #6c757d; /* Softer text color */
+}
+
+.ptopright p strong {
+    color: #343a40; /* Darker text for emphasis */
+    font-weight: 600; /* Bold */
+}
+
+.pright .rightprofile .pbottomright {
+    height: 40%;
+    width: 100%;
+     border-radius: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .pcontainer .pleft {
+        width: 40%;
+    }
+ 
+    .pcontainer .pright {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .pcontainer {
+        flex-direction: column;
+        height: auto;
+        margin-top: 135vh;
+    }
+
+    .pcontainer .pleft,
+    .pcontainer .pright {
+        width: 100%;
+        height: auto;
+    }
+
+    .pleft .ptopleft,
+    .pleft .pbottomleft,
+    .pright .rightprofile .ptopright,
+    .pright .rightprofile .pbottomright {
+        height: auto;
+        width: 100%;
+    }
+
+    .ptopleft .livematch img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pleft .ptopleft .livematch img {
+        height: 150px;
+    }
+ 
+    .pright .rightprofile {
+        width: 100%;
+    }
+
+    .ptopright h2 {
+        font-size: 20px; /* Smaller heading for mobile */
+    }
+
+    .ptopright p {
+        font-size: 14px; /* Smaller paragraph text for mobile */
+    }
+}
+
+.upcoming-matches {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.upcoming-matches ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.upcoming-matches li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.upcoming-matches li div {
+    display: flex;
+    align-items: center;
+}
+
+.upcoming-matches li div img {
+    margin-right: 8px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.upcoming-matches li div span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.upcoming-matches li .match-time {
+    font-size: 12px;
+    color: green;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.upcoming-matches .team1, .team2 {
+    width: 45%;
+}
+
+.upcoming-matches .team1 {
+    justify-content: flex-start;
+}
+
+.upcoming-matches .team2 {
+    justify-content: flex-end;
+}
+
+.upcoming-matches li:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.upcoming-matches h3 {
+    text-align: center;
+    color: rgba(28, 136, 4, 0.804);
+    margin-bottom: 10px;
+}
+
+
+.pbottomright {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.pbottomright h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #3333338d;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.completed-matches {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.match {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.team span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.vs {
+    font-size: 20px;
+    color: #666;
+    font-weight: bold;
+}
+
+.match-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.match-info .result {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.match-info .location,
+.match-info .tournament {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .match {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .match-info {
+        text-align: right;
+        width: auto;
+    }
+
+    .teams {
+        width: 60%;
+    }
+
+    .match-info {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .match {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .teams {
+        width: 100%;
+    }
+
+    .match-info {
+        text-align: left;
+        width: 100%;
+    }
+}

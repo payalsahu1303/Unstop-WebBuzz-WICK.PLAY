@@ -1,0 +1,130 @@
+/* General Container for the Live Matches */
+.matchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+    justify-content: center;
+    height: 115vh;
+  }
+  
+  /* Logo Banner Section */
+  .logoBanner {
+    margin-bottom: 20px;
+  }
+  
+  .logoBanner img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Matches Section */
+  .matches {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Match Card Styling */
+  .matchCart {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 350px;
+  }
+  
+  .matchCart:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Banner Image inside the Match Card */
+  .banner img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+  }
+  
+  /* Score Section */
+  .score {
+    padding: 15px;
+    background-color: #f8f9fa;
+    text-align: center;
+    position: relative;
+  }
+  
+  .score p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .score p strong {
+    color: #007bff;
+  }
+  
+  /* Styling for the Live Label */
+  .liveLabel {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  /* Stadium & Description Section */
+  .stadium {
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .stadium p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .stadium p strong {
+    color: #007bff;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .banner img {
+      height: 189px;
+    }
+  
+    .score p {
+      font-size: 14px;
+    }
+  
+    .stadium p {
+      font-size: 12px;
+    }
+    .matches {
+      flex-direction: column;
+    }
+    .matchContainer {
+      height: 370vh;
+    }
+  }
+  .showbtn{
+    padding:3px 10px;
+    background-color: #369b04c1;
+    border: none;
+    color: white;
+  }

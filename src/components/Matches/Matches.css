@@ -1,0 +1,76 @@
+.matches-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .tab-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .tab-button.active {
+    background-color: #0a8547;
+    color: white;
+  }
+  
+  .match-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .match-card {
+    background-color: rgba(255, 255, 255, 0.762);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .team-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .team-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 0 10px;
+  }
+  
+  .vs {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .match-details {
+    margin-top: 15px;
+  }
+  
+  .match-details h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .match-details p {
+    margin: 5px 0;
+    color: #666;
+  }
+  

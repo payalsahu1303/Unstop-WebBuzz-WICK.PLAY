@@ -1,0 +1,113 @@
+ 
+
+.contact-us-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.207)),
+    url("src/components/assets/contact-bg.png") 
+      no-repeat bottom center/cover;
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 800px;
+     gap: 20px;
+}
+
+.contact-title {
+    font-size: 30px;
+    font-weight: bold;
+     text-align: center;
+    margin-top: 70px;
+    color: white;
+}
+
+.form-section {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.form-textarea {
+    height: 150px;
+    resize: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.map-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: justify;
+    color: #ffffff;
+}
+
+/* Responsive design for devices with width up to 480px */
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .form-input,
+    .form-textarea {
+        font-size: 14px;
+    }
+
+    .form-textarea {
+        height: 120px;
+    }
+
+    .submit-button {
+        font-size: 16px;
+    }
+
+    .map-section iframe {
+        height: 200px;
+    }
+}

@@ -1,0 +1,92 @@
+/* Container for the matches */
+.container-match{
+  background-color: #0a8547;
+
+}
+.matches-container {
+  padding: 20px;
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: auto; /* Center the container */
+}
+
+/* Title styling */
+.matches-container h2 {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #f7f7f7;
+}
+
+/* Flex container for match cards */
+.matches-row {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  justify-content: center; /* Space between cards */
+  align-items: center;
+}
+
+/* Individual match card styling */
+.match-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Spacing around each card */
+  padding: 15px;
+  flex: 1 1 calc(20% - 20px); /* 4 to 5 cards per row on large screens */
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-width: 250px; /* Minimum width for better desktop appearance */
+}
+
+/* Match card hover effect */
+.match-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Match info styling */
+.match-info {
+  margin-bottom: 15px;
+}
+
+/* Teams container styling */
+.teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Individual team styling */
+.team {
+  text-align: center;
+  flex: 1;
+}
+
+/* Team logo styling */
+.team img {
+  width: 60px; /* Logo size */
+  max-width: 100%; /* Prevent overflow */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  .match-card {
+    flex: 1 1 calc(25% - 20px); /* 4 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .match-card {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .match-card {
+    flex: 1 1 100%; /* 1 card per row on extra small screens */
+  }
+}
