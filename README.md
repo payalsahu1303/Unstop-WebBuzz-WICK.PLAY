@@ -60,7 +60,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/wick.play.git
+   git clone https://github.com/payalsahu1303/Unstop-WebBuzz-WICK.PLAY.git
 
 2. Navigate to the project folder:
    ```bash
@@ -74,5 +74,5 @@ To run this project locally, follow these steps:
    ```bash
    npm start 
 
-## **Code Submission**
+## Code Submission
 The full codebase is available in this GitHub repository. All code is original, and no part has been plagiarized.
