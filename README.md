@@ -2,8 +2,6 @@
 
 Welcome to **WICK.PLAY**, a cricket-themed website developed for the **UNSTOP WebBuzz: Web Development Challenge**. This project is designed to provide a dynamic and interactive platform for cricket lovers, organizations, and tournament organizers. The site is built using modern web technologies, including **React.js**, **CSS**, **HTML**, and **API**, and is deployed on **Netlify** for seamless public access.
 
-
-
 ## Features
 
 ### 1. **Responsive Design**
